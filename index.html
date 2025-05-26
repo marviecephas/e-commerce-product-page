@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href= "favicon-32x32.png">
+    <title>e-commerce product page</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "gallery-container">
+        <div class = "x-mark-container">
+            <img src = "icon-close.svg" class = "close-gallery">
+        </div>
+        <div class = "large-product-img-gallery">
+                    <img src = "icon-previous.svg" class = "arrow-bwd-gallery">
+                    <img src = "icon-next.svg" class = "arrow-fwd-gallery">
+        </div>
+        <div class = "product-images-gallery">
+            <img src = "image-product-1.jpg" class = "product-img img-1">
+            <img src = "image-product-2.jpg" class = "product-img">
+            <img src = "image-product-3.jpg" class = "product-img">
+            <img src = "image-product-4.jpg" class = "product-img">
+        </div>
+    </div>
+    <div id = "main-container">
+        <div class = "header-container">
+            <div class = "nav-menu-left">
+                <img src = "icon-menu.svg" class = "menu-bar">
+              <img src = "logo.svg" class = "logo">
+              <div class = "nav-menu">
+                  <img src = "icon-close.svg" class = "close-nav-menu">
+                  <p class = "menu-item">Collections</p>
+                  <p class = "menu-item">Men</p>
+                  <p class = "menu-item">Women</p>
+                  <p class = "menu-item">About</p>
+                  <p class = "menu-item">Contact</p>
+              </div>  
+            </div>
+            <div class = "nav-menu-right">
+                <div class = "nav-cart-container">
+                    <img src = "icon-cart.svg" class = "nav-item-cart">
+                    <p class = "items-number-on-cart">0</p>
+                </div>
+                <img src = "image-avatar.png" class = "nav-item-avatar">
+                <div class = "cart-set-container">
+                    <div class = "cart-container">
+                            <div class = "cart-heading">
+                                <p class = "c-heading">Cart</p>   
+                            </div>
+                            <div class = "sub-cart-container">                           
+                            <p class = "empty-cart">Your cart is empty</p>
+                            <div class = "cart-item">
+                                <img src = "image-product-1.jpg" class = "cart-item-img">
+                                <div class = "cart-item-desc">
+                                    <h4 class = "cart-item-header">Full Limited Edition Sneakers</h4>
+                                    <p class = "cart-item-price">$125.00 × <span class = "cart-items-number">${itemsNumOnCart.innerHTML}</span> <span class = "total-price">$${itemsNumOnCart.innerHTML * 125}.00</span></p>
+                                </div>
+                                <img src = "icon-delete.svg" class = "del-cart">
+                           </div>
+                           <p class = "check-out">Checkout</p>
+                            </div>
+                        </div>
+                   </div>
+            </div>
+        </div>
+        <div class = "content-container">
+            <div class = "gallery-container-mobile">
+                <div class = "large-product-img">
+                    <img src = "icon-previous.svg" class = "arrow-bwd">
+                    <img src = "icon-next.svg" class = "arrow-fwd">
+                </div>
+                <div class = "product-images">
+                    <img src = "image-product-1.jpg" class = "product-img img-1">
+                    <img src = "image-product-2.jpg" class = "product-img">
+                    <img src = "image-product-3.jpg" class = "product-img">
+                    <img src = "image-product-4.jpg" class = "product-img">
+                </div>
+            </div>
+            <div class = "desc-container">
+                <h3 class = "first-heading">Sneaker Company</h3>
+                <h1 class = "main-heading">Fall Limited Edition Sneakers</h1>
+                <p class = "desc-paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class = "price-container">
+                    <div class = "sub-price-container">
+                        <p class = "current-price">$125.00</p>
+                        <p class = "discount">50%</p>
+                    </div>
+                    <p class = "prev-price">$250.00</p>
+                </div>
+                <div class = "purchase-container">
+                    <div class = "item-container">
+                        <img src = "icon-minus.svg" class = "subtr-icon">
+                        <p class = "items-number">0</p>
+                        <img src = "icon-plus.svg" class = "add-icon">
+                    </div>
+                    <p class = "add-container"><img src = "icon-cart.svg" class = "cart-add">Add to cart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>
