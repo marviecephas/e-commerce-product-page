@@ -334,6 +334,9 @@
     font-weight:700;
 }
 @media (min-width: 1200px) {
+    body{
+        background: green;
+    }
   .header-container {
     height: 100px !important;
     border-bottom: 1px solid hsl(220, 14%, 75%) !important;
@@ -474,3 +477,4 @@
   .arrow-fwd-gallery, .arrow-bwd-gallery {
     position: absolute !important;
         }
+}
