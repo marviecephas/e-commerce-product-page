@@ -334,7 +334,7 @@
     font-weight:700;
 }
 @media (min-width: 1200px) {
-    body{
+    #main-container{
         background: green;
     }
   .header-container {
